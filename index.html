@@ -16,13 +16,13 @@
 <body>
   <header class="header">
       <div class="logo">
-          <a href="#">logo</a>
+          <a href="index.html">logo</a>
       </div>
         <ul class="menu">
           <li><a class="fs-lh-6" href="product.html">系統鏡框</a></li>
           <li><a class="fs-lh-6  ml-6" href="location.html">門市據點</a></li>
           <li><a class="fs-lh-6  ml-6" href="blog.html">部落格</a></li>
-          <li><a class="fs-lh-6  ml-6" href="fqa.html">常見問題</a></li>
+          <li><a class="fs-lh-6  ml-6" href="faq.html">常見問題</a></li>
         </ul>
   </header>
 
@@ -163,9 +163,10 @@
     </div>
 </div>
 <div class="contact"> 
-    <div class="contactList">
+    <div class="container">
         <h2 class="fs-lh-2">聯絡我們</h2>
-        <p class="fs-lh-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+        <div class="contactList">
+            <p class="fs-lh-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
             <form id="myForm">
                 <div>
                     <label for="">姓名</label>
@@ -202,53 +203,58 @@
                     <input class="fs-lh-4" type="button" value="確認送出">
                 </div>
             </form>
+        </div>
     </div>
+        
 </div>
 
   <footer class="footer">
     <div class="container">
-      <div class="contactLink">
-        <ul class="menuList fs-lh-4">
-          <li><a href="#">首頁</a></li>
-          <li><a class=" ml-6"  href="#">系列鏡框</a></li>
-          <li><a class=" ml-6"  href="#">門市據點</a></li>
-          <li><a class=" ml-6"  href="#">部落格</a></li>
-          <li><a class=" ml-6"  href="#">常見問題</a></li>
-        </ul>
-        <ul class="contactList">
-          <li><a class="link fbLink" href="#">Fackbook</a></li>
-          <li><a class="link igLink" href="#">IG</a></li>
-          <li><a class="link lineLink" href="#">LINE</a></li>
-        </ul>
-      </div>
-      <div class="contactSend">
-        <ul>
-          <li>
-            <div class="tell">
-              <a href="#">tell</a>
-            </div>
-            <a class="fs-lh-5" href="#">0800-000-000</a>
-          </li>
-          <li>
-            <div class="email">
-              <a href="#">email</a>
-            </div>
-            <a class="fs-lh-5" href="#">glasses@business.com</a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <p class="fs-lh-4">Copyright © 2020 Glasses.All rights reserved.</p>
+        <div class="footerList">
+          <div class="linkList">
+            <ul class="menuList fs-lh-4">
+              <li><a href="index.html">首頁</a></li>
+              <li><a class="ml-6"  href="product.html">系列鏡框</a></li>
+              <li><a class="ml-6"  href="location.html">門市據點</a></li>
+              <li><a class="ml-6"  href="blog.html">部落格</a></li>
+              <li><a class="ml-6"  href="faq.html">常見問題</a></li>
+            </ul>
+            <ul class="contactSend">
+              <li>
+                <div class="tell">
+                  <a href="#">tell</a>
+                </div>
+                <a class="fs-lh-5" href="#">0800-000-000</a>
+              </li>
+              <li>
+                <div class="email">
+                  <a href="#">email</a>
+                </div>
+                <a class="fs-lh-5" href="#">glasses@business.com</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="contactList">
+            <li><a class="link fbLink" href="#">Fackbook</a></li>
+            <li><a class="link igLink" href="#">IG</a></li>
+            <li><a class="link lineLink" href="#">LINE</a></li>
+          </ul>
+        </div>
+      <div class="footer-copyright">
+        <div>
+          <p class="fs-lh-4">Copyright © 2020 Glasses.All rights reserved.</p>
+        </div>
         <ul>
           <li>
             <a href="#">隱私權政策</a>
           </li>
           <li>
-            <a class="copyrightml" href="#">服務條款</a>
+            <a href="#">服務條款</a>
           </li>
         </ul>
       </div>
-    </div>
+      </div>
+      
   </footer>
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script src="./assets/js/vendors.js"></script>

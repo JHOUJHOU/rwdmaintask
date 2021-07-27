@@ -63,7 +63,8 @@ body {
   font-family: "思源黑體 TW,Reguler"; }
 
 /* 顏色 */
-/* 間距 */
+/* 基本間距 */
+/* 特別間距 */
 /* 字型大小及文字行高 */
 .fs-lh-1 {
   font-size: 64px;
@@ -93,10 +94,16 @@ body {
   font-size: 28px;
   line-height: 72px; }
 
-/* 文字字體 */
-.ff-1 {
-  font-family: 'Noto Sans TC', sans-serif; }
+.fs-lh-8 {
+  font-size: 28px;
+  line-height: 72px; }
 
+.fs-lh-9 {
+  font-size: 28px;
+  line-height: 72px; }
+
+/* 文字字體 */
+/* 相關頁面 */
 .container {
   max-width: 1110px;
   margin: 0 auto; }
@@ -173,84 +180,87 @@ body {
   background: #AA0601;
   padding-top: 32px;
   padding-bottom: 40px; }
-  .footer .contactLink {
+  .footer .footerList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 24px; }
-    .footer .contactLink .menuList {
+            justify-content: space-between; }
+    .footer .footerList .linkList {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .footer .contactLink .menuList .ml-6 {
-        margin-left: 48px; }
-      .footer .contactLink .menuList a {
-        padding: 12px 0px; }
-      .footer .contactLink .menuList a:hover {
-        font-weight: bold; }
-    .footer .contactLink .contactList {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .footer .footerList .linkList .menuList {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 36px; }
+        .footer .footerList .linkList .menuList .ml-6 {
+          margin-left: 48px; }
+        .footer .footerList .linkList .menuList a {
+          padding: 12px 0px; }
+        .footer .footerList .linkList .menuList a:hover {
+          font-weight: bold; }
+        @media (max-width: 767px) {
+          .footer .footerList .linkList .menuList {
+            display: none; } }
+      .footer .footerList .linkList .contactSend {
+        margin-bottom: 24px; }
+        .footer .footerList .linkList .contactSend li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .footer .footerList .linkList .contactSend li .tell {
+            width: 48px;
+            height: 48px;
+            background: url("../images/icon-phone.svg") no-repeat;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 16px;
+            margin-bottom: 16px; }
+          .footer .footerList .linkList .contactSend li .email {
+            max-width: 48px;
+            height: 48px;
+            background: url("../images/icon-mail.svg") center center no-repeat;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 16px; }
+          @media (max-width: 992px) {
+            .footer .footerList .linkList .contactSend li a {
+              font-size: 20px;
+              line-height: 30px; } }
+    .footer .footerList .contactList {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .footer .contactLink .contactList li {
+      display: flex; }
+      .footer .footerList .contactList li {
         margin-left: 40px; }
-      .footer .contactLink .contactList .link {
+      .footer .footerList .contactList .link {
         width: 48px;
         height: 48px; }
-      .footer .contactLink .contactList .fbLink {
+      .footer .footerList .contactList .fbLink {
         background: url("../images/icon-fb.svg") no-repeat;
         text-indent: 101%;
         white-space: nowrap;
         overflow: hidden; }
-      .footer .contactLink .contactList .igLink {
+      .footer .footerList .contactList .igLink {
         background: url("../images/icon-ig.svg") no-repeat;
         text-indent: 101%;
         white-space: nowrap;
         overflow: hidden; }
-      .footer .contactLink .contactList .lineLink {
+      .footer .footerList .contactList .lineLink {
         background: url("../images/icon-line.svg") no-repeat;
         text-indent: 101%;
         white-space: nowrap;
         overflow: hidden; }
-  .footer .contactSend {
-    margin-bottom: 24px; }
-    .footer .contactSend li {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .footer .contactSend li .tell {
-        width: 48px;
-        height: 48px;
-        background: url("../images/icon-phone.svg") no-repeat;
-        text-indent: 101%;
-        white-space: nowrap;
-        overflow: hidden;
-        margin-right: 16px;
-        margin-bottom: 16px; }
-      .footer .contactSend li .email {
-        width: 48px;
-        height: 48px;
-        background: url("../images/icon-mail.svg") no-repeat;
-        text-indent: 101%;
-        white-space: nowrap;
-        overflow: hidden;
-        margin-right: 16px; }
-  .footer .copyright {
+  .footer .footer-copyright {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -259,17 +269,32 @@ body {
             justify-content: space-between;
     padding-top: 32px;
     border-top: 1px solid #fff; }
-    .footer .copyright p {
+    @media (max-width: 767px) {
+      .footer .footer-copyright {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-top: 16px; } }
+    .footer .footer-copyright p {
       color: #fff; }
-    .footer .copyright ul {
+    .footer .footer-copyright ul {
+      width: 150px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-      .footer .copyright ul a {
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 767px) {
+        .footer .footer-copyright ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      .footer .footer-copyright ul a {
         font-size: 14px;
         line-height: 21px; }
-      .footer .copyright ul .copyrightml {
-        margin-left: 48px; }
 
 .banner {
   background: url("../images/banner.png") center center no-repeat;
@@ -433,7 +458,13 @@ body {
     margin-bottom: 32px; }
     @media (max-width: 992px) {
       .glass .glassList li {
-        margin-bottom: 8px; } }
+        margin-bottom: 8px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .glass .glassList li .glass-img {
       width: 650px;
       height: 320px; }
@@ -453,9 +484,6 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media (max-width: 767px) {
-        .glass .glassList li .glassText {
-          position: absolute; } }
       .glass .glassList li .glassText .icon {
         width: 48px;
         height: 48px; }
@@ -491,18 +519,48 @@ body {
 .design {
   padding-top: 60px;
   padding-bottom: 80px;
-  height: 705px;
+  height: auto;
   margin-bottom: 60px;
   background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true") center center no-repeat; }
+  @media (max-width: 992px) {
+    .design {
+      padding-top: 0px;
+      padding-bottom: 56px;
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .design {
+      padding-top: 32px;
+      padding-bottom: 40px; } }
   .design h2 {
     color: white;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px; }
+    @media (max-width: 992px) {
+      .design h2 {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .design h2 {
+        font-size: 20px;
+        margin-bottom: 20px; } }
   .design .designList {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 767px) {
+      .design .designList {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .design .designList .designDouble {
       background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true") no-repeat;
       width: 540px;
@@ -517,6 +575,13 @@ body {
           -ms-flex-align: center;
               align-items: center;
       opacity: 0.5; }
+      @media (max-width: 992px) {
+        .design .designList .designDouble {
+          width: 330px;
+          height: 278px; } }
+      @media (max-width: 767px) {
+        .design .designList .designDouble {
+          margin-bottom: 16px; } }
     .design .designList .designYouth {
       background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true") no-repeat;
       width: 540px;
@@ -531,18 +596,41 @@ body {
           -ms-flex-align: center;
               align-items: center;
       opacity: 0.5; }
+      @media (max-width: 992px) {
+        .design .designList .designYouth {
+          width: 330px;
+          height: 278px; } }
     .design .designList p {
       color: #AA0601;
       font-size: 72px;
       line-height: 108px; }
+      @media (max-width: 992px) {
+        .design .designList p {
+          font-size: 32px;
+          line-height: 25px; } }
 
 .customer {
   margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .customer {
+      margin-bottom: 56px; } }
+  @media (max-width: 992px) {
+    .customer {
+      margin-bottom: 40px; } }
   .customer h2 {
     color: #650300;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px; }
+    @media (max-width: 992px) {
+      .customer h2 {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .customer h2 {
+        font-size: 20px;
+        margin-bottom: 20px; } }
   .customer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -550,9 +638,25 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 992px) {
+      .customer ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    @media (max-width: 992px) {
+      .customer ul {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     .customer ul li {
       width: 255px;
+      border: 1px solid #DEE2E6;
       height: auto; }
+      @media (max-width: 992px) {
+        .customer ul li {
+          margin-bottom: 32px; } }
+      @media (max-width: 767px) {
+        .customer ul li {
+          margin-bottom: 16px; } }
       .customer ul li img {
         height: 256px;
         display: block; }
@@ -581,18 +685,40 @@ body {
   height: 894px;
   padding-top: 60px;
   padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .contact {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .contact {
+      padding-top: 30px;
+      padding-bottom: 40px; } }
+  .contact h2 {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px; }
   .contact .contactList {
     width: 730px;
     margin: 0 auto; }
-    .contact .contactList h2 {
-      color: #000;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 24px; }
+    @media (max-width: 992px) {
+      .contact .contactList {
+        width: 450px; } }
+    @media (max-width: 767px) {
+      .contact .contactList {
+        width: 345px; } }
     .contact .contactList p {
       margin-bottom: 20px; }
+      @media (max-width: 992px) {
+        .contact .contactList p {
+          font-size: 16px;
+          line-height: 24px; } }
     .contact .contactList label {
       display: block; }
+      @media (max-width: 992px) {
+        .contact .contactList label {
+          font-size: 14px;
+          line-height: 21px; } }
     .contact .contactList input {
       width: 100%;
       height: 50px;
@@ -602,6 +728,9 @@ body {
     .contact .contactList .messages {
       color: red;
       margin-bottom: 16px; }
+      @media (max-width: 992px) {
+        .contact .contactList .messages {
+          margin-bottom: 8px; } }
     .contact .contactList .checkboxText {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -610,6 +739,11 @@ body {
           -ms-flex-align: center;
               align-items: center;
       margin-bottom: 40px; }
+      @media (max-width: 992px) {
+        .contact .contactList .checkboxText {
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; } }
       .contact .contactList .checkboxText .checkbox {
         width: 24px;
         height: 24px;
@@ -621,5 +755,157 @@ body {
       margin: 0 auto; }
       .contact .contactList .button input {
         color: #fff; }
+        @media (max-width: 992px) {
+          .contact .contactList .button input {
+            font-size: 14px;
+            line-height: 21px; } }
+
+.location {
+  padding-top: 96px;
+  padding-bottom: 160px; }
+  .location h2 {
+    font-size: 48px;
+    line-height: 80px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-bottom: 65px; }
+  .location .location-option {
+    margin-bottom: 32px; }
+    .location .location-option .select {
+      font-size: 24px;
+      line-height: 30px;
+      margin-right: 20px; }
+  .location .adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .location .adress .adress-item {
+      width: 350px;
+      border: 1px solid #DEE2E6; }
+      .location .adress .adress-item .location-one {
+        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true") center center no-repeat;
+        width: 350px;
+        height: 224px;
+        background-size: cover;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden; }
+      .location .adress .adress-item h3 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border: 1px solid #DEE2E6; }
+      .location .adress .adress-item ul {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 24px; }
+        .location .adress .adress-item ul li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-bottom: 8px; }
+          .location .adress .adress-item ul li a {
+            color: black; }
+          .location .adress .adress-item ul li .tell {
+            width: 24px;
+            height: 24px;
+            background: url("../images/icon-phone.svg") center center no-repeat;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+            background: black;
+            background-size: cover;
+            margin-right: 8px; }
+          .location .adress .adress-item ul li .time {
+            width: 24px;
+            height: 24px;
+            background: url("../images/icon-clock-black.svg") center center no-repeat;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-size: cover;
+            margin-right: 8px; }
+          .location .adress .adress-item ul li .local {
+            width: 24px;
+            height: 25px;
+            background: url("../images/icon-map.svg") no-repeat;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 8px; }
+      .location .adress .adress-item .detailed {
+        text-align: center;
+        background: #000;
+        color: #fff;
+        padding: 20px; }
+
+.fap {
+  padding-top: 96px;
+  padding-bottom: 160px; }
+  @media (max-width: 767px) {
+    .fap {
+      padding-top: 28px;
+      padding-bottom: 56px; } }
+  .fap h2 {
+    font-size: 48px;
+    line-height: 80px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-bottom: 60px;
+    font-family: "思源黑體 TW";
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .fap h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+        border-left: 4px solid #9F1213; } }
+  .fap h3 {
+    font-size: 32px;
+    line-height: 63px;
+    margin-bottom: 36px;
+    font-family: "Noto Sans";
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .fap h3 {
+        font-size: 20px;
+        margin-bottom: 24px; } }
+
+.faqList {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 767px) {
+    .faqList {
+      margin-bottom: 20px; } }
+  .faqList h4 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Noto Sans";
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .faqList h4 {
+        margin-bottom: 8px; } }
+  .faqList li {
+    padding-left: 10%;
+    font-family: "思源黑體 TW";
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .faqList li {
+        font-size: 14px;
+        line-height: 21px;
+        padding-left: 0%; }
+        .faqList li .break {
+          margin-bottom: 21px; } }
 
 /*# sourceMappingURL=all.css.map */
