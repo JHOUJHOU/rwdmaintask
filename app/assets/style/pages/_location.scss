@@ -1,0 +1,84 @@
+.location{
+    padding-top: 96px;
+    padding-bottom: 160px;
+    h2{
+        font-size: 48px;
+        line-height: 80px;
+        border-left: 8px solid $otherTitle;
+        padding-left: 16px;
+        margin-bottom: 65px;
+    }
+    .location-option{
+        margin-bottom: $mb-4;
+        .select{
+            font-size: 24px;
+            line-height: 30px;
+            margin-right: 20px;
+        }
+    }
+    .adress{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .adress-item{
+            width: 350px;
+            border: 1px solid #DEE2E6;
+            .location-one{
+                background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true") center center no-repeat;
+                width: 350px;
+                height: 224px;
+                background-size: cover;
+                @include bg-hidden;
+            }
+            h3{
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                border: 1px solid #DEE2E6;
+            }
+            ul{
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 24px;
+                li{
+                    display: flex;
+                    margin-bottom: $mb-1;
+                    a{
+                        color: black;
+                    }
+                    
+                    .tell{
+                        width: 24px;
+                        height: 24px;
+                        background: url("../images/icon-phone.svg") center center no-repeat;
+                        @include bg-hidden;
+                        background: black;
+                        background-size: cover;
+                        margin-right: 8px;
+                    }
+                    .time{
+                        width: 24px;
+                        height: 24px;
+                        background: url("../images/icon-clock-black.svg") center  center no-repeat;
+                        @include bg-hidden;
+                        background-size: cover;
+                        margin-right: 8px;
+                    }
+                    .local{
+                        width: 24px;
+                        height: 25px;
+                        background: url("../images/icon-map.svg") no-repeat;
+                        @include bg-hidden;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .detailed{
+                text-align: center;
+                background: #000;
+                color:#fff;
+                padding: 20px;
+            }
+        }
+    }
+}

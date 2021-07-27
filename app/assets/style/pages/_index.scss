@@ -1,0 +1,597 @@
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    @include Pad(){
+        max-width: 690px;
+    }
+    @include phone(){
+        max-width: 345px;
+    }
+}
+.header{
+    background: $red;
+    padding-left: 80px;
+    padding-right: 88px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    @include phone(){
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top:10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logo a{
+        width: 80px;
+        height: 48px;
+        background: url("../images/logo.png") no-repeat;
+        @include bg-hidden;
+        @include phone(){
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include phone(){
+            flex-wrap: wrap;
+            li {
+                width: 50%;
+                border: 1px solid #fff;
+                text-align: center;
+            }
+        }
+        a{
+            padding: 10px 32px;
+            @include phone(){
+                a{
+                    line-height: 27px;
+                }
+            }
+        }
+        a:hover{
+            font-weight: bold;
+        }
+    }
+}
+.footer{
+    background: $red;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    .footerList{
+        display: flex;
+        justify-content: space-between;
+        .linkList{
+            display: flex;
+            flex-direction: column;
+            .menuList{
+                display: flex;
+                margin-bottom: 36px;
+                .ml-6{
+                    margin-left: $ml-6;
+                }
+                a{
+                    padding: 12px 0px;
+                }
+                a:hover{
+                    font-weight: bold;
+                }
+                @include phone(){
+                    display: none;
+                }
+            }
+            .contactSend{
+                margin-bottom: $mb-3;
+                li{
+                    display: flex;
+                    .tell{
+                        width: 48px;
+                        height: 48px;
+                        background: url("../images/icon-phone.svg") no-repeat;
+                        @include bg-hidden;
+                        margin-right: 16px;
+                        margin-bottom: $mb-2;
+                    }
+                    .email{
+                        max-width: 48px;
+                        height: 48px;
+                        background: url("../images/icon-mail.svg") center center no-repeat;
+                        @include bg-hidden;
+                        margin-right: 16px;
+                    }
+                    @include Pad(){
+                        a{
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            
+        }  
+        .contactList{
+            display: flex;
+            li{
+            margin-left: $ml-5;
+            }
+            .link{
+                width: 48px;
+                height: 48px;
+            }
+            .fbLink{
+                background: url("../images/icon-fb.svg") no-repeat;
+                @include bg-hidden;
+            }
+            .igLink{
+                background: url("../images/icon-ig.svg") no-repeat;
+                @include bg-hidden;
+            }
+            .lineLink{
+                background: url("../images/icon-line.svg") no-repeat;
+                @include bg-hidden;
+            }
+        } 
+        
+    }
+    .footer-copyright{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        border-top: 1px solid #fff;
+        @include phone(){
+            flex-direction: column;
+            padding-top: 16px;
+        }
+        p{
+            color: #fff;
+        }
+        ul{
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            @include phone(){
+                flex-direction: column;
+            }
+            a{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            // .copyrightml{
+            // margin-left: $ml-6;
+            // }
+        }
+        
+    }
+}
+.banner{
+    background: url("../images/banner.png") center center no-repeat;
+    height: 840px;
+    background-size: cover;
+    position: relative;
+    .mainTitle{
+        position: absolute;
+        top: 300px;
+        right: 150px;
+        text-align: right;
+    }
+    p{
+        color: $darkred;
+        @include Pad(){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include phone(){
+            font-size: 16px;
+        }
+    }
+    h1{
+        color: $darkred;
+        font-weight: bold;
+        @include Pad(){
+            font-size: 48px;
+            line-height: 72px;
+        }
+        @include phone(){
+            font-size: 32px;
+        }
+    }
+}
+.profession{
+    background: $pink;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+    @include Pad(){
+        margin-bottom: $mb-5;
+    }
+    @include phone(){
+        margin-bottom: $mb-4;
+    }
+    h2{
+        margin-bottom: $mb-6;
+        text-align: center;
+        color: $darkred;
+        font-weight: bold;
+        @include Pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: $mb-5;
+        }
+        @include phone(){
+            margin-bottom: 28px;
+            font-size: 24px;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include Pad{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @include phone{
+            flex-direction: column;
+        }
+        h4{
+            color: $darkred;
+            margin-bottom: $mb-1;
+            font-weight: bold;
+        }
+        li{
+            width: 255px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include Pad{
+                margin-bottom: $mb-5;
+            }
+            .price{
+                background: url("../images/icon-dollar.svg") no-repeat;
+                color: $darkred;
+                @include bg-hidden;
+                width: 100px;
+                height: 100px;
+                margin-bottom: $mb-2;
+            }
+                .time{
+                background: url("../images/icon-clock.svg") no-repeat;
+                color: $darkred;
+                @include bg-hidden;
+                width: 100px;
+                height: 100px;
+                margin-bottom: $mb-2;
+            }
+                .service{
+                background: url("../images/icon-heart.svg") no-repeat;
+                color: $darkred;
+                @include bg-hidden;
+                width: 100px;
+                height: 100px;
+                margin-bottom: $mb-2;
+            }
+                .about{
+                background: url("../images/icon-glasses.svg") no-repeat;
+                color: $darkred;
+                @include bg-hidden;
+                width: 100px;
+                height: 100px;
+                margin-bottom: $mb-2;
+            }
+        }
+    }
+}
+.glass{
+    margin-bottom: 80px;
+    @include Pad(){
+        margin-bottom: $mb-7;
+    }
+    @include phone(){
+        margin-bottom: $mb-5;
+    }
+    h2{
+        text-align: center;
+        color: $darkred;
+        margin-bottom: $mb-5;
+        font-weight: bold;
+        @include Pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: $mb-4;
+        }
+        @include phone(){
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .glassList li{
+        display: flex;
+        margin-bottom: $mb-4;
+        @include Pad(){
+            margin-bottom: $mb-1;
+            justify-content: center;
+            align-items: center;
+        }
+        .glass-img{
+            width: 650px;
+            height: 320px;
+            @include Pad(){
+                width: 390px;
+                height: 168px;
+            }
+            @include phone(){
+                width: 345px;
+                height: 134px;
+            }
+        }
+        .glassText{
+            margin-left: 32px;
+            display: flex;
+            align-items: center;
+            .icon{
+                width: 48px;
+                height: 48px;
+                @include Pad(){
+                    width: 44px;
+                    height: 44px;
+                }
+                @include phone(){
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            span{
+                color: $red;
+                font-weight: bold;
+                margin-left: 10px;
+                @include Pad(){
+                    font-size: 28px;
+                }
+            }
+        }
+        
+    }
+    .glassList li:nth-child(2){
+        flex-direction: row-reverse;
+        @include Pad(){
+            flex-direction: row;
+        }
+        .glassText{
+            margin-right: 32px;
+        }
+    }
+}
+.design{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    height: auto;
+    margin-bottom: 60px;
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true") center center no-repeat;
+    @include Pad(){
+        padding-top: 0px;
+        padding-bottom: 56px;
+        margin-bottom: $mb-5;
+    }
+    @include phone(){
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+    h2{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $mb-5;
+        @include Pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: $mb-4;
+        }
+        @include phone(){
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .designList{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include phone(){
+            flex-direction: column;
+        }
+        .designDouble{
+            background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true") no-repeat;
+            width: 540px;
+            height: 455px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0.5;
+            @include Pad(){
+                width: 330px;
+                height: 278px;
+            }
+            @include phone(){
+                margin-bottom: $mb-2;
+            }
+        }
+        .designYouth{
+            background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true") no-repeat;
+            width: 540px;
+            height: 455px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0.5;
+            @include Pad(){
+                width: 330px;
+                height: 278px;
+            }
+        }
+        p{
+            color: $red;
+            font-size: 72px;
+            line-height: 108px;
+            @include Pad(){
+                font-size: 32px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+.customer{
+    margin-bottom: 80px;
+    @include Pad(){
+        margin-bottom: $mb-7;
+    }
+    @include Pad(){
+        margin-bottom: $mb-5;
+    }
+    h2{
+        color: $darkred;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $mb-5;
+        @include Pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: $mb-4;
+        }
+        @include phone(){
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        @include Pad(){
+            flex-wrap: wrap;
+        }
+        @include Pad(){
+            justify-content: center;
+        }
+        li{
+            width: 255px;
+            border: 1px solid #DEE2E6;
+            height: auto;
+            @include Pad(){
+                margin-bottom: $mb-4;
+            }
+            @include phone(){
+                margin-bottom: $mb-2;
+            }
+            img{
+                height: 256px;
+                display: block;
+            }
+            .customerList{
+                height: 204px;
+                margin: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .customerTitle{
+                    margin-bottom: $mb-1;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $gray;
+                }
+            }
+            
+        }
+    }
+}
+.contact{
+    background: #AA06010D;
+    height: 894px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @include Pad(){
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+    @include phone(){
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    h2{
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $mb-3;
+    } 
+    .contactList{
+        width: 730px;
+        margin: 0 auto;
+        @include Pad(){
+            width: 450px;
+        }
+        @include phone(){
+            width: 345px;
+        }
+        p{
+            margin-bottom: 20px;
+            @include Pad(){
+                font-size: 16px;
+                line-height: 24px;
+            }
+        } 
+        label{
+            display: block;
+            @include Pad(){
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            background: #AA06010D;
+        }
+        .feedbackText{
+            height: 136px;
+        }
+        .messages{
+            color: red;
+            margin-bottom: $mb-2;
+            @include Pad(){
+                margin-bottom: $mb-1;
+            }
+        }
+        .checkboxText{
+            display: flex;
+            align-items: center;
+            margin-bottom: $mb-5;
+            @include Pad(){
+                justify-content: flex-start;
+            }
+            .checkbox{
+                width: 24px;
+                height: 24px;
+                margin-left: 4px;
+            }
+        }
+        .button{
+            width: 354px;
+            height: auto;
+            background: $red;
+            margin: 0 auto;
+            input{
+                color: #fff;
+                @include Pad(){
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+        
+    }
+}

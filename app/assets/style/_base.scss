@@ -1,0 +1,71 @@
+/* 顏色 */
+$red: #AA0601;
+$darkred: #650300;
+$gray: #212529;
+$pink: #AA06010D;
+$otherTitle: #9F1213;
+
+/* 基本間距 */
+$mb-base: 8px;
+$mb-1: $mb-base;
+$mb-2: $mb-base * 2;
+$mb-3: $mb-base * 3;
+$mb-4: $mb-base * 4;
+$mb-5: $mb-base * 5;
+$mb-6: $mb-base * 6;
+$mb-7: $mb-base * 7;
+$mb-8: $mb-base * 8;
+$mb-9: $mb-base * 9;
+
+$ml-base: 8px;
+$ml-1: $ml-base;
+$ml-2: $ml-base * 2;
+$ml-3: $ml-base * 3;
+$ml-4: $ml-base * 4;
+$ml-5: $ml-base * 5;
+$ml-6: $ml-base * 6;
+$ml-7: $ml-base * 7;
+$ml-8: $ml-base * 8;
+$ml-9: $ml-base * 9;
+
+/* 特別間距 */
+/* 字型大小及文字行高 */
+.fs-lh-1{
+    font-size: 64px;
+    line-height: 96px;
+}
+.fs-lh-2{
+    font-size: 48px;
+    line-height: 72px;
+}
+.fs-lh-3{
+    font-size: 24px;
+    line-height: 36px;
+}
+.fs-lh-4{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fs-lh-5{
+    font-size: 36px;
+    line-height: 54px;
+}
+.fs-lh-6{
+    font-size: 20px;
+    line-height: 30px;
+}
+.fs-lh-7{
+    font-size: 28px;
+    line-height: 72px;
+}
+.fs-lh-8{
+    font-size: 28px;
+    line-height: 72px;
+}
+.fs-lh-9{
+    font-size: 28px;
+    line-height: 72px;
+}
+/* 文字字體 */
+$ff-1: "思源黑體 TW";
+$ff-2 : "Noto Sans";

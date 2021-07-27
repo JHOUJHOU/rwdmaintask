@@ -1,0 +1,65 @@
+.fap{
+    padding-top: 96px;
+    padding-bottom: 160px;
+    @include phone(){
+        padding-top: 28px;
+        padding-bottom: 56px;
+    }
+    h2{
+        font-size: 48px;
+        line-height: 80px;
+        border-left: 8px solid $otherTitle;
+        padding-left: 16px;
+        margin-bottom: 60px;
+        font-family: $ff-1;
+        font-weight: bold;
+        @include phone(){
+            font-size: 20px;
+            margin-bottom: $mb-3;
+            border-left: 4px solid $otherTitle;
+        }
+    }
+    h3{
+        font-size: 32px;
+        line-height: 63px;
+        margin-bottom: 36px;
+        font-family: $ff-2;
+        font-weight: bold;
+        @include phone(){
+            font-size: 20px;
+            margin-bottom: $mb-3;
+        }
+    }
+}
+
+.faqList{
+    margin-bottom: $mb-4;
+    display: flex;
+    flex-direction: column;
+    @include phone(){
+        margin-bottom: 20px;
+    }
+    h4{
+        margin-bottom: $mb-2;
+        font-size: 20px;
+        line-height: 32px;
+        font-family: $ff-2;
+        font-weight: bold;
+        @include phone(){
+            margin-bottom: $mb-1;
+        }
+    }
+    li{
+        padding-left: 10%;
+        font-family: $ff-1;
+        font-weight: bold;
+        @include phone(){
+            font-size: 14px;
+            line-height: 21px;
+            padding-left: 0%;
+            .break{
+                margin-bottom: 21px;
+            }
+        }
+    }
+}
