@@ -105,8 +105,10 @@ body {
 /* 文字字體 */
 /* 相關頁面 */
 .container {
-  max-width: 1110px;
-  margin: 0 auto; }
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
   @media (max-width: 992px) {
     .container {
       max-width: 690px; } }
@@ -763,86 +765,142 @@ body {
 .location {
   padding-top: 96px;
   padding-bottom: 160px; }
+  @media (max-width: 992px) {
+    .location {
+      padding-top: 60px;
+      padding-bottom: 96px; } }
+  @media (max-width: 767px) {
+    .location {
+      padding-top: 28px;
+      padding-bottom: 56px; } }
   .location h2 {
     font-size: 48px;
     line-height: 80px;
     border-left: 8px solid #9F1213;
     padding-left: 16px;
     margin-bottom: 65px; }
+    @media (max-width: 992px) {
+      .location h2 {
+        font-size: 28px;
+        padding-left: 8px;
+        margin-bottom: 50px; } }
+    @media (max-width: 767px) {
+      .location h2 {
+        margin-bottom: 31px; } }
   .location .location-option {
     margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .location .location-option {
+        margin-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .location .location-option {
+        margin-bottom: 20px; } }
     .location .location-option .select {
       font-size: 24px;
       line-height: 30px;
       margin-right: 20px; }
+      @media (max-width: 992px) {
+        .location .location-option .select {
+          font-size: 16px; } }
+      @media (max-width: 767px) {
+        .location .location-option .select {
+          font-size: 14px;
+          margin-right: 12px; } }
+  .location .city {
+    width: 324px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 19px;
+    color: #495057;
+    font-size: 18px;
+    line-height: 26px; }
+    @media (max-width: 992px) {
+      .location .city {
+        width: 237px;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        padding-left: 16px; } }
+    @media (max-width: 767px) {
+      .location .city {
+        width: 277px;
+        font-size: 14px;
+        padding-top: 7px;
+        padding-bottom: 9px; } }
   .location .adress {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+        flex-wrap: wrap; }
     .location .adress .adress-item {
       width: 350px;
-      border: 1px solid #DEE2E6; }
-      .location .adress .adress-item .location-one {
-        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true") center center no-repeat;
-        width: 350px;
+      padding-right: 30px;
+      margin-bottom: 32px; }
+      @media (max-width: 992px) {
+        .location .adress .adress-item {
+          width: 330px;
+          margin-bottom: 20px; } }
+      @media (max-width: 767px) {
+        .location .adress .adress-item {
+          width: 345px;
+          margin-bottom: 16px; } }
+      .location .adress .adress-item .location-img {
+        width: 100%;
         height: 224px;
-        background-size: cover;
-        text-indent: 101%;
-        white-space: nowrap;
-        overflow: hidden; }
+        display: block; }
+        @media (max-width: 992px) {
+          .location .adress .adress-item .location-img {
+            width: 330px;
+            height: 164px; } }
+        @media (max-width: 767px) {
+          .location .adress .adress-item .location-img {
+            width: 345px; } }
       .location .adress .adress-item h3 {
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 24px;
         border: 1px solid #DEE2E6; }
+        @media (max-width: 992px) {
+          .location .adress .adress-item h3 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 16px;
+            line-height: 24px; } }
       .location .adress .adress-item ul {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 24px; }
+        padding: 16px 24px;
+        border: 1px solid #DEE2E6; }
         .location .adress .adress-item ul li {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           margin-bottom: 8px; }
           .location .adress .adress-item ul li a {
-            color: black; }
-          .location .adress .adress-item ul li .tell {
+            color: black;
+            font-size: 20px;
+            line-height: 30px; }
+            @media (max-width: 992px) {
+              .location .adress .adress-item ul li a {
+                font-size: 14px;
+                line-height: 21px; } }
+          .location .adress .adress-item ul li .icon-img {
             width: 24px;
             height: 24px;
-            background: url("../images/icon-phone.svg") center center no-repeat;
-            text-indent: 101%;
-            white-space: nowrap;
-            overflow: hidden;
-            background: black;
-            background-size: cover;
             margin-right: 8px; }
-          .location .adress .adress-item ul li .time {
-            width: 24px;
-            height: 24px;
-            background: url("../images/icon-clock-black.svg") center center no-repeat;
-            text-indent: 101%;
-            white-space: nowrap;
-            overflow: hidden;
-            background-size: cover;
-            margin-right: 8px; }
-          .location .adress .adress-item ul li .local {
-            width: 24px;
-            height: 25px;
-            background: url("../images/icon-map.svg") no-repeat;
-            text-indent: 101%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-right: 8px; }
+            @media (max-width: 992px) {
+              .location .adress .adress-item ul li .icon-img {
+                width: 20px;
+                height: 20px; } }
       .location .adress .adress-item .detailed {
         text-align: center;
         background: #000;
         color: #fff;
         padding: 20px; }
+      .location .adress .adress-item .googlemap {
+        width: 635px;
+        height: 442px;
+        padding-left: 30px; }
 
 .fap {
   padding-top: 96px;
