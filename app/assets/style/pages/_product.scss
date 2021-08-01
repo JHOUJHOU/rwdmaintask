@@ -1,0 +1,114 @@
+.productMenu{
+    ul{
+        display: flex;
+        li{
+            width: 370px;
+            border: 1px solid #DEE2E6;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 27px;
+                padding-bottom: 26px;
+                color:black;
+                font-size: 32px;
+                line-height: 48px;
+            }
+            a:hover{
+                border-bottom: 8px solid $red;
+            }
+            img{
+                width: 48px;
+                height: 48px;
+                display: block;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+.product-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    img{
+        width: 960px;
+        display: block;
+    }
+}
+.productList{
+    h2{
+        font-size: 42px;
+        line-height: 63px;
+        text-align: center;
+    }
+    .titleText{
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: $mb-5;
+        text-align: center;
+    }
+    .glassList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 880px;
+        margin-bottom: 96px;
+        img{
+            width: 255px;
+            height: 164px;
+            display: block;
+        }
+        .sunglassList{
+            width: 350px;
+            height: 225px;
+        }
+        .glassPrice{
+            display: flex;
+            justify-content: space-between;
+            .price{
+                color: $red;
+            }
+        }
+        .glassColor{
+            display: flex;
+            .brown{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: #5F3E2D;
+            }
+            .lightbrow{
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                background: #B75929;
+                margin-left: $ml-1;
+            }
+        }
+        
+    }
+    
+}
+.pages{
+    margin-bottom: 160px;
+    ul{
+        display: flex;
+        justify-content: center;
+        a{
+            font-size: 18px;
+            line-height: 27px;
+            color: #555555;
+            padding: 12px 16px;
+            border: 1px solid #555555;
+            .pagesmove{
+                padding: 11px 12px;
+                font-size: 9px;
+                line-height: 29px;
+            }
+        }
+        .pagestag{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
