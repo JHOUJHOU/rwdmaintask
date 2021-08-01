@@ -65,7 +65,7 @@ body {
 /* 顏色 */
 /* 基本間距 */
 /* 特別間距 */
-/* 字型大小及文字行高 */
+/* 字型大小 */
 .fs-lh-1 {
   font-size: 64px;
   line-height: 96px; }
@@ -105,16 +105,16 @@ body {
 /* 文字字體 */
 /* 相關頁面 */
 .container {
-  max-width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px; }
   @media (max-width: 992px) {
     .container {
-      max-width: 690px; } }
+      max-width: 720px; } }
   @media (max-width: 767px) {
     .container {
-      max-width: 345px; } }
+      max-width: 375px; } }
 
 .header {
   background: #AA0601;
@@ -597,7 +597,8 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      opacity: 0.5; }
+      opacity: 0.5;
+      margin-left: 30px; }
       @media (max-width: 992px) {
         .design .designList .designYouth {
           width: 330px;
@@ -761,6 +762,125 @@ body {
           .contact .contactList .button input {
             font-size: 14px;
             line-height: 21px; } }
+
+.productMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .productMenu ul li {
+    width: 370px;
+    border: 1px solid #DEE2E6; }
+    .productMenu ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 27px;
+      padding-bottom: 26px;
+      color: black;
+      font-size: 32px;
+      line-height: 48px; }
+    .productMenu ul li a:hover {
+      border-bottom: 8px solid #AA0601; }
+    .productMenu ul li img {
+      width: 48px;
+      height: 48px;
+      display: block;
+      padding-right: 10px; }
+
+.product-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px; }
+  .product-logo img {
+    width: 960px;
+    display: block; }
+
+.productList h2 {
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center; }
+
+.productList .titleText {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.productList .glassList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 880px;
+  margin-bottom: 96px; }
+  .productList .glassList img {
+    width: 255px;
+    height: 164px;
+    display: block; }
+  .productList .glassList .sunglassList {
+    width: 350px;
+    height: 225px; }
+  .productList .glassList .glassPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .productList .glassList .glassPrice .price {
+      color: #AA0601; }
+  .productList .glassList .glassColor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .productList .glassList .glassColor .brown {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background: #5F3E2D; }
+    .productList .glassList .glassColor .lightbrow {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      background: #B75929;
+      margin-left: 8px; }
+
+.pages {
+  margin-bottom: 160px; }
+  .pages ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .pages ul a {
+      font-size: 18px;
+      line-height: 27px;
+      color: #555555;
+      padding: 12px 16px;
+      border: 1px solid #555555; }
+      .pages ul a .pagesmove {
+        padding: 11px 12px;
+        font-size: 9px;
+        line-height: 29px; }
+    .pages ul .pagestag {
+      background-color: #000;
+      color: #fff; }
 
 .location {
   padding-top: 96px;
